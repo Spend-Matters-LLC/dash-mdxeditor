@@ -1,21 +1,21 @@
-import dash_mdxeditor
-from dash import Dash, callback, html, Input, Output
+import dash_mdxeditor as dme
+from dash import Dash, callback, html, Input
 
 app = Dash(__name__)
 
+default_text = "# Hello World! \n## This is a subtitle\nThis is a **normal** text\n- Item 1\n- Item 2\n"
+
 app.layout = html.Div([
-    dash_mdxeditor.MdxEditor(
-        id='input',
-        value='my-value',
-        label='my-label'
+    dme.MdxEditor(
+        id='mdx-editor',
+        default_text=default_text,
     ),
-    html.Div(id='output')
 ])
 
 
-@callback(Output('output', 'children'), Input('input', 'value'))
-def display_output(value):
-    return 'You have entered {}'.format(value)
+@callback(Input('mdx-editor', 'text'))
+def display_output(text: str):
+    print(text)
 
 
 if __name__ == '__main__':

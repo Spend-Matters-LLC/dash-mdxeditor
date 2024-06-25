@@ -1,6 +1,3 @@
-/* eslint-disable import/prefer-default-export */
-import MdxEditor from './components/MdxEditor.react';
+import MdxEditor from "./components/MdxEditor"
 
-export {
-    MdxEditor
-};
+export { MdxEditor }

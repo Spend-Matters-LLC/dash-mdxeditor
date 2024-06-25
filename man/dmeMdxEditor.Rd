@@ -6,19 +6,19 @@
 \title{MdxEditor component}
 
 \description{
-ExampleComponent is an example component. It takes a property, `label`, and displays it. It renders an input with the property `value` which is editable by the user.
+MdxEditor is a markdown editor that allows to preview the markdown content and edit as rich text.
 }
 
 \usage{
-dmeMdxEditor(id=NULL, label=NULL, value=NULL)
+dmeMdxEditor(id=NULL, default_text=NULL, text=NULL)
 }
 
 \arguments{
 \item{id}{Character. The ID used to identify this component in Dash callbacks.}
 
-\item{label}{Character. A label that will be printed when this component is rendered.}
+\item{default_text}{Character. The initial text of the editor}
 
-\item{value}{Character. The value displayed in the input.}
+\item{text}{Character. The text of the editor (read)}
 }
 
 \value{named list of JSON elements corresponding to React.js properties and their values}

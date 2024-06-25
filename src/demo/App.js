@@ -1,24 +1,16 @@
-/* eslint no-magic-numbers: 0 */
-import React, { useState } from 'react';
-
-import { MdxEditor } from '../lib';
+import React, { useState } from 'react'
+import { MdxEditor } from '../lib'
 
 const App = () => {
+  const [state, setState] = useState({
+    default_text: "# Hello World! \n## This is a subtitle\nThis is a **normal** text\n- Item 1\n- Item 2\n"
+  })
 
-    const [state, setState] = useState({value:'', label:'Type Here'});
-    const setProps = (newProps) => {
-            setState(newProps);
-        };
+  const setProps = (newProps) => {
+    setState(newProps)
+  }
 
-    return (
-        <div>
-            <MdxEditor
-                setProps={setProps}
-                {...state}
-            />
-        </div>
-    )
-};
+  return <MdxEditor setProps={setProps} {...state} />
+}
 
-
-export default App;
+export default App

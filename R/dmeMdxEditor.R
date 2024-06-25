@@ -1,9 +1,9 @@
 # AUTO GENERATED FILE - DO NOT EDIT
 
 #' @export
-dmeMdxEditor <- function(id=NULL, label=NULL, value=NULL) {
+dmeMdxEditor <- function(id=NULL, default_text=NULL, text=NULL) {
     
-    props <- list(id=id, label=label, value=value)
+    props <- list(id=id, default_text=default_text, text=text)
     if (length(props) > 0) {
         props <- props[!vapply(props, is.null, logical(1))]
     }
@@ -11,7 +11,7 @@ dmeMdxEditor <- function(id=NULL, label=NULL, value=NULL) {
         props = props,
         type = 'MdxEditor',
         namespace = 'dash_mdxeditor',
-        propNames = c('id', 'label', 'value'),
+        propNames = c('id', 'default_text', 'text'),
         package = 'dashMdxeditor'
         )
 

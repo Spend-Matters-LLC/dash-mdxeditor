@@ -6,18 +6,15 @@ export dme_mdxeditor
     dme_mdxeditor(;kwargs...)
 
 A MdxEditor component.
-ExampleComponent is an example component.
-It takes a property, `label`, and
-displays it.
-It renders an input with the property `value`
-which is editable by the user.
+MdxEditor is a markdown editor that allows to preview the markdown content and edit
+as rich text.
 Keyword arguments:
 - `id` (String; optional): The ID used to identify this component in Dash callbacks.
-- `label` (String; required): A label that will be printed when this component is rendered.
-- `value` (String; optional): The value displayed in the input.
+- `default_text` (String; optional): The initial text of the editor
+- `text` (String; optional): The text of the editor (read)
 """
 function dme_mdxeditor(; kwargs...)
-        available_props = Symbol[:id, :label, :value]
+        available_props = Symbol[:id, :default_text, :text]
         wild_props = Symbol[]
         return Component("dme_mdxeditor", "MdxEditor", "dash_mdxeditor", available_props, wild_props; kwargs...)
 end
