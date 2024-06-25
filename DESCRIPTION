@@ -1,0 +1,13 @@
+Package: dashMdxeditor
+Title: Dash wrapper for the MdxEditor React library
+Version: 0.0.1
+Description: Dash wrapper for the MdxEditor React library
+Depends: R (>= 3.0.2)
+Imports: 
+Suggests: 
+License: MIT + file LICENSE
+URL: https://github.com/Spend-Matters-LLC/dash-mdxeditor
+BugReports: https://github.com/Spend-Matters-LLC/dash-mdxeditor/issues
+Encoding: UTF-8
+LazyData: true
+KeepSource: true

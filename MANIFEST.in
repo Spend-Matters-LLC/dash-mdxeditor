@@ -1,0 +1,11 @@
+include dash_mdxeditor/dash_mdxeditor.min.js
+include dash_mdxeditor/dash_mdxeditor.min.js.map
+include dash_mdxeditor/async-*.js
+include dash_mdxeditor/async-*.js.map
+include dash_mdxeditor/*-shared.js
+include dash_mdxeditor/*-shared.js.map
+include dash_mdxeditor/metadata.json
+include dash_mdxeditor/package-info.json
+include README.md
+include LICENSE
+include package.json
